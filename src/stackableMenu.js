@@ -8,31 +8,30 @@ export default class MenuExampleStackable extends Component {
 
   render() {
     const { activeItem } = this.state
-
     return (
       <Menu stackable fluid widths={3}>
         <Menu.Item
-          name='features'
-          active={activeItem === 'features'}
+          name='thoughts'
+          active={activeItem === 'thoughts'}
           onClick={this.handleItemClick}
         >
-          Features
+          musings
         </Menu.Item>
 
         <Menu.Item
-          name='testimonials'
-          active={activeItem === 'testimonials'}
+          name='gallery'
+          active={activeItem === 'gallery'}
           onClick={this.handleItemClick}
         >
-          Testimonials
+          gallery
         </Menu.Item>
 
         <Menu.Item
-          name='sign-in'
-          active={activeItem === 'sign-in'}
+          name='connect'
+          active={activeItem === 'connect'}
           onClick={this.handleItemClick}
         >
-          Sign-in
+          connect
         </Menu.Item>
       </Menu>
     )

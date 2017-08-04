@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
 import { Image } from 'semantic-ui-react'
-import gazelle from './gazelle.jpg';
-import rope from './rope.jpg';
+import rope from './images/rope.jpg';
 import { Container } from 'semantic-ui-react'
 import './App.css';
 import MenuExampleStackable from './stackableMenu.js'
+import GridExampleVerticallyDivided from './grids.js'
+import "react-image-gallery/styles/css/image-gallery.css";
 
 const ImageExampleFluid = () => (
-  <Image src={rope} size='medium' centered className="sarah-trap-gazelle" alt="Sarah in gazelle on static trapeze" fluid />
+  <Image src={rope} size='medium' centered className="sarah-rope" alt="Sarah on corde lisse" fluid />
 )
 
 const ContainerExampleContainer = () => (
@@ -17,6 +18,7 @@ const ContainerExampleContainer = () => (
       <h1>Sarah Colby</h1>
     </Container>
     <MenuExampleStackable />
+    <GridExampleVerticallyDivided  />
   </div>
 )
 
