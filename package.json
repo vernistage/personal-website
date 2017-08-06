@@ -5,6 +5,9 @@
   "dependencies": {
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
+    "react-images": "^0.5.5",
+    "react-photo-gallery": "^5.6.1",
+    "react-responsive-carousel": "^3.1.24",
     "react-scripts": "1.0.10",
     "semantic-ui-css": "^2.2.11",
     "semantic-ui-react": "^0.71.3"
