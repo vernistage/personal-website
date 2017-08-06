@@ -1,7 +1,7 @@
-import React, { Component } from 'react'
-import { Menu } from 'semantic-ui-react'
+import React, { Component } from 'react';
+import { Menu, Item } from 'semantic-ui-react'
 
-export default class MenuExampleStackable extends Component {
+class MainMenu extends Component {
   state = {}
 
   handleItemClick = (e, { name }) => this.setState({ activeItem: name })
@@ -11,11 +11,12 @@ export default class MenuExampleStackable extends Component {
     return (
       <Menu stackable fluid widths={3}>
         <Menu.Item
-          name='thoughts'
-          active={activeItem === 'thoughts'}
+          name='about'
+          className = 'about'
+          active={activeItem === 'about'}
           onClick={this.handleItemClick}
         >
-          musings
+          about
         </Menu.Item>
 
         <Menu.Item
@@ -37,3 +38,5 @@ export default class MenuExampleStackable extends Component {
     )
   }
 }
+
+export default MainMenu

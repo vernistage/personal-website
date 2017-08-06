@@ -1,32 +1,7 @@
-import React from 'react'
-import { Grid } from 'semantic-ui-react'
+import React, { Component } from 'react'
 import ImageGallery from 'react-image-gallery';
 
-const GridExampleVerticallyDivided = () => (
-  <Grid divided='vertically'>
-    <Grid.Row relaxed columns={1}>
-      <Grid.Column>
-        <h2> about </h2>
-        <p style={{textAlign:"left"}}>
-          The joy that comes from producing art and connecting with an audience drives my work. I have a B.A. and M.A. in Art History and spent years studing and working with artists who inspire my creative process. I am always open to creating custom performance experiences and collaborating on new projects.
-        </p>
-      </Grid.Column>
-    </Grid.Row>
-    <Grid.Row columns={1}>
-      <Grid.Column>
-        <h2> connect </h2>
-      </Grid.Column>
-    </Grid.Row>
-    <Grid.Row centered columns={1}>
-      <Grid.Column width={6} textAlign='center'>
-        <h2> gallery </h2>
-        <MyComponent />
-      </Grid.Column>
-    </Grid.Row>
-  </Grid>
-)
-
-class MyComponent extends React.Component {
+class AerialGallery extends Component {
 
   handleImageLoad(event) {
     console.log('Image loaded ', event.target)
@@ -67,4 +42,4 @@ class MyComponent extends React.Component {
 
 }
 
-export default GridExampleVerticallyDivided
+export default AerialGallery
