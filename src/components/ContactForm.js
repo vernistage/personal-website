@@ -4,6 +4,7 @@ import { Form, Input, TextArea, Button, Icon } from 'semantic-ui-react'
 class ContactForm extends Component {
   handleButtonClick = () => {
     this.setState((props) => {
+      console.log(Object.getOwnPropertyNames(props))
       return {
 
       }
