@@ -1,29 +1,91 @@
 import React, { Component } from 'react';
-import { Form, Input, TextArea, Button, Icon } from 'semantic-ui-react'
+import { Form, Input, TextArea, Button } from 'semantic-ui-react'
 
 class ContactForm extends Component {
-  handleButtonClick = () => {
-    this.setState((props) => {
-      console.log(Object.getOwnPropertyNames(props))
-      return {
+  constructor(props) {
+    super(props);
 
-      }
-    })
+    this.state = {
+      firstName: '',
+      lastName: '',
+      email: '',
+      phoneNum: '',
+      message: ''
+    }
   }
+
+  handleChange = (e) => {
+   let newState = {};
+   newState[e.target.name] = e.target.value;
+   this.setState(newState);
+  };
+
+  handleSubmit = (e) => {
+   e.preventDefault();
+
+   let formData = {
+      formSender: this.state.firstName,
+      formSender: this.state.lastName,
+      formEmail: this.state.email,
+      formNum: this.state.phoneNum,
+      formMessage: this.state.message
+    }
+
+    this.setState({
+      firstName: '',
+      lastName: '',
+      email: '',
+      phoneNum: '',
+      message: ''
+    });
+  };
 
   render() {
     return (
-      <Form>
+      <Form onSubmit={this.handleSubmit}>
         <Form.Group widths='equal'>
-          <Form.Field id='form-input-control-first-name' control={Input} label='First name' placeholder='First name' />
-          <Form.Field id='form-input-control-last-name' control={Input} label='Last name' placeholder='Last name' />
+          <Form.Field
+            id='form-input-control-first-name'
+            control={Input}
+            label='First name'
+            placeholder='First name'
+            name = 'firstName'
+            onChange={this.handleChange} />
+          <Form.Field
+            id='form-input-control-last-name'
+            control={Input}
+            label='Last name'
+            placeholder='Last name'
+            name = 'lastName'
+            onChange={this.handleChange} />
         </Form.Group>
         <Form.Group widths='equal'>
-          <Form.Field id='form-input-control-email' control={Input} label='Email' placeholder='your@email.com' />
-          <Form.Field id='form-input-control-email' control={Input} label='Phone number' placeholder='XXX-XXX-XXXX' />
+          <Form.Field
+            id='form-input-control-email'
+            control={Input}
+            label='Email'
+            placeholder='your@email.com'
+            name = 'email'
+            onChange={this.handleChange} />
+          <Form.Field
+            id='form-input-control-email'
+            control={Input}
+            label='Phone number'
+            placeholder='XXX-XXX-XXXX'
+            name = 'phoneNum'
+            onChange={this.handleChange} />
         </Form.Group>
-        <Form.Field id='form-textarea-control-opinion' control={TextArea} label='Request' placeholder='How can I help you?' />
-        <Form.Field id='form-button-control-public' control={Button} content='Connect' onClick={this.handleButtonClick}  />
+        <Form.Field
+          id='form-textarea-control-opinion'
+          control={TextArea}
+          label='Request'
+          placeholder='How can I help you?'
+          name = 'message'
+          onChange={this.handleChange} />
+        <Form.Field
+          id='form-button-control-public'
+          control={Button}
+          content='Connect' />
        </Form>
      )
    }

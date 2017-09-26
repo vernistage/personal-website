@@ -4,7 +4,7 @@ import ImageGallery from 'react-image-gallery';
 class AerialGallery extends Component {
 
   handleImageLoad(event) {
-    console.log('Image loaded ', event.target)
+    // console.log('Image loaded ', event.target)
   }
 
   render() {
