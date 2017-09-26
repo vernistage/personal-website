@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 // Styling
-import { Menu, Grid, Image, Container, Segment, Header, Form, Input, TextArea, Button, Icon } from 'semantic-ui-react'
+import { Grid, Image, Container, Segment, Header, Button, Icon } from 'semantic-ui-react'
 import "react-image-gallery/styles/css/image-gallery.css";
 import './App.css';
 import './index.css';
@@ -17,7 +17,7 @@ class App extends Component {
     return (
       <div className="App">
         <Container className="intro">
-          <Image src={rope} size='medium' centered className="sarah-rope" alt="Sarah on corde lisse" fluid />
+          <Image src={rope} size='medium' centered className="sarah-rope" alt="Sarah on corde lisse" />
           <Header as='h1'>
             Sarah Colby
             <Header.Subheader>
@@ -37,7 +37,7 @@ class App extends Component {
 
 const GridExampleVerticallyDivided = () => (
   <Grid divided='vertically'>
-    <Grid.Row relaxed columns={1}>
+    <Grid.Row columns={1}>
       <Grid.Column>
         <Header as='h2'> about </Header>
         <Segment clearing padded='very'>
@@ -74,7 +74,7 @@ const GridExampleVerticallyDivided = () => (
     </Grid.Row>
     <Grid.Row columns={1}>
       <Grid.Column>
-        <div textAlign="left">
+        <div>
           <i> © 2017 Sarah Colby. All rights reserved. </i>
         </div>
       </Grid.Column>
