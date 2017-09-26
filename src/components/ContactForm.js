@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Form, Input, TextArea, Button } from 'semantic-ui-react'
 import axios from 'axios';
-
+//
 class ContactForm extends Component {
   constructor(props) {
     super(props);
@@ -23,7 +23,7 @@ class ContactForm extends Component {
 
   handleSubmit = (e) => {
    e.preventDefault();
-  //  console.log(this.state)
+  //  console.log(JSON.stringify(this.state))
    let formData = {
       formSender: this.state.firstName,
       formSender: this.state.lastName,
@@ -31,8 +31,6 @@ class ContactForm extends Component {
       formNum: this.state.phoneNum,
       formMessage: this.state.message
     }
-
-    let formDataJSON = JSON.stringify(formData)
 
     this.setState({
       firstName: '',
