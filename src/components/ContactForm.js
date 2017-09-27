@@ -40,7 +40,7 @@ class ContactForm extends Component {
       message: ''
     });
 
-    axios.post('http://www.sarahacolby.com/contact-me', formData)
+    axios.post('http://www.sarahacolby.com/contact-me', { form: formData })
       .then(function (response) {
        console.log(response);
       })
