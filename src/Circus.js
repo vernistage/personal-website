@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 // Styling
 import { Grid, Image, Container, Segment, Header, Button, Icon } from 'semantic-ui-react'
 import "react-image-gallery/styles/css/image-gallery.css";
-import './App.css';
-import './index.css';
+import './Circus.css';
 // Components
 import AerialGallery from './components/AerialGallery.js';
 import MainMenu from './components/Menu.js'
