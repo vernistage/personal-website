@@ -18,10 +18,10 @@ class AerialGallery extends Component {
         original: 'https://s3.ca-central-1.amazonaws.com/sarah-aerial-images/trapeze-split-XL.jpg',
         thumbnail: 'https://s3.ca-central-1.amazonaws.com/sarah-aerial-images/trapeze-split-S.jpg',
       },
-      {
-        original: 'https://s3.ca-central-1.amazonaws.com/sarah-aerial-images/rope-split-XL.jpg',
-        thumbnail: 'https://s3.ca-central-1.amazonaws.com/sarah-aerial-images/rope-split-S.jpg',
-      },
+      // {
+      //   original: 'https://s3.ca-central-1.amazonaws.com/sarah-aerial-images/rope-split-XL.jpg',
+      //   thumbnail: 'https://s3.ca-central-1.amazonaws.com/sarah-aerial-images/rope-split-S.jpg',
+      // },
       {
         original: 'https://s3.ca-central-1.amazonaws.com/sarah-aerial-images/straps-arabesque-XL.jpg',
         thumbnail: 'https://s3.ca-central-1.amazonaws.com/sarah-aerial-images/straps-arabesque-S.jpg'
