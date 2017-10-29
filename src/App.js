@@ -7,31 +7,20 @@ import {
   Link
 } from 'react-router-dom'
 // Styling
-import { Button } from 'semantic-ui-react'
-import Circus from './Circus.js'
-import Code from './Code.js'
+import Circus from './Circus'
+import Code from './Code'
+import Home from './components/home/Home'
 
 class Index extends Component {
   render() {
     return (
-      <div>
-        <a href='/code'>
-          <Button inverted color='red'>
-            Code
-          </Button>
-        </a>
-        <a href='/circus'>
-          <Button inverted color='red'>
-            Circus
-          </Button>
-        </a>
-        <Router>
-          <div>
-            <Route path="/circus" component={Circus}/>
-            <Route path="/code" component={Code}/>
-          </div>
-        </Router>
-      </div>
+      <Router>
+        <div>
+          <Route exact path="/" component={Home}/>
+          <Route path="/circus" component={Circus}/>
+          <Route path="/code" component={Code}/>
+        </div>
+      </Router>
     );
   }
 }
