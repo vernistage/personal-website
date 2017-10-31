@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import { Button } from 'semantic-ui-react';
 import './Home.css';
-import headshot from './../../images/headshot.jpeg'
-import rope from './../../images/rope.jpg';
+import coding from './../../images/this-page.png'
+import trapeze from './../../images/circus-cover.jpg';
 
 class Home extends Component {
   constructor(){
@@ -16,39 +16,36 @@ class Home extends Component {
   codeBackground(e){
     e.preventDefault();
     this.setState({code: true})
-    console.log('code');
   }
 
   circusBackground(e){
     e.preventDefault();
     this.setState({circus: true, code: false})
-    console.log('circus');
   }
 
   removeBackground(e){
     e.preventDefault();
     this.setState({circus: false, code: false})
-    console.log('out');
   }
 
   render() {
-    let imgUrl = ''
+    let imgChoice = ''
     if (this.state.code){
-      imgUrl = headshot
+      imgChoice = coding
     } else if (this.state.circus){
-      imgUrl = rope
+      imgChoice = trapeze
     } else {
-      imgUrl = ''
+      imgChoice = ''
     }
     return (
-      <div className='main-buttons' style={{backgroundImage: 'url(' + imgUrl + ')'}}>
-        <div className='buttons'>
-          <a href='/code'>
+      <div className='main-buttons' style={{backgroundImage: 'url(' + imgChoice + ')'}}>
+        <div className='buttons' style={{opacity: 1}}>
+          <a href='/code' target="_blank">
             <Button className='menu-button' size='huge' inverted color='red' onMouseEnter={this.codeBackground.bind(this)} onMouseLeave={this.removeBackground.bind(this)}>
               Code
             </Button>
           </a>
-          <a href='/circus'>
+          <a href='/circus' target="_blank">
             <Button className='menu-button' size='huge' inverted color='red' onMouseEnter={this.circusBackground.bind(this)} onMouseLeave={this.removeBackground.bind(this)}>
               Circus
             </Button>
