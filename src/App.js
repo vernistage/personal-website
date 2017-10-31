@@ -7,7 +7,7 @@ import {
   Link
 } from 'react-router-dom'
 // Styling
-import Circus from './Circus'
+import Circus from './components/circus/Circus'
 import Code from './Code'
 import Home from './components/home/Home'
 
@@ -26,21 +26,3 @@ class Index extends Component {
 }
 
 export default Index
-
-
-// class mainMenu extends Component {
-//   render() {
-//     return (
-//       <Router>
-//         <div id="background">
-//           <Link to="/">Home</Link>
-//           <Link to="/circus">Circus</Link>
-//           <Link to="/code">Code</Link>
-//           <Route exact path="/" component={Home}/>
-//           <Route path="/circus" component={Circus}/>
-//           <Route path="/code" component={Code}/>
-//         </div>
-//       </Router>
-//     );
-//   }
-// }
