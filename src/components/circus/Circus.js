@@ -4,12 +4,12 @@ import { Grid, Image, Container, Segment, Header, Button, Icon } from 'semantic-
 import "react-image-gallery/styles/css/image-gallery.css";
 import './Circus.css';
 // Components
-import AerialGallery from './components/AerialGallery.js';
-import MainMenu from './components/Menu.js'
-import ContactForm from './components/ContactForm.js'
+import AerialGallery from './AerialGallery.js';
+import MainMenu from './Menu.js'
+import ContactForm from './ContactForm.js'
 // Images
-import headshot from './images/headshot.jpeg'
-import rope from './images/rope.jpg';
+import headshot from './../../images/headshot.jpeg'
+import rope from './../../images/rope.jpg';
 
 class Circus extends Component {
   render() {
@@ -20,7 +20,7 @@ class Circus extends Component {
           <Header as='h1'>
             Sarah Colby
             <Header.Subheader>
-              aerial performance artist
+              aerialist
             </Header.Subheader>
             <Header.Subheader>
               austin, texas
