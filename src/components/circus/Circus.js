@@ -64,10 +64,10 @@ const GridExampleVerticallyDivided = () => (
         <Segment clearing padded='very'>
           <ContactForm />
           <div className="social-buttons">
-            <Button color='instagram'>
+            <Button color='instagram' href="http://instagram.com/sarahintheair" target="_blank">
               <Icon name='instagram' /> Instagram
             </Button>
-            <Button color='google plus'>
+            <Button color='google plus' href="mailto:sarahcreating@gmail.com">
               <Icon name='mail outline' /> Email
             </Button>
           </div>
