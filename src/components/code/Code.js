@@ -5,7 +5,7 @@ class Code extends Component {
   render() {
     return (
       <div>
-        Code 
+        Code
       </div>
     );
   }

@@ -8,7 +8,7 @@ import {
 } from 'react-router-dom'
 // Styling
 import Circus from './components/circus/Circus'
-import Code from './Code'
+import Code from './components/code/Code'
 import Home from './components/home/Home'
 
 class Index extends Component {
