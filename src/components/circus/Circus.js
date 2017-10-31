@@ -8,7 +8,7 @@ import AerialGallery from './AerialGallery.js';
 import MainMenu from './Menu.js'
 import ContactForm from './ContactForm.js'
 // Images
-import headshot from './../../images/headshot.jpeg'
+import headshot from './../../images/face.jpg'
 import rope from './../../images/rope.jpg';
 
 class Circus extends Component {
@@ -38,24 +38,27 @@ const GridExampleVerticallyDivided = () => (
   <Grid divided='vertically'>
     <Grid.Row columns={1}>
       <Grid.Column>
-        <Header as='h2'> about </Header>
+        <Header as='h2' id="about"> about </Header>
         <Segment clearing padded='very'>
-        <Image src={headshot} size='tiny' shape='rounded' floated='left' />
+        <Image src={headshot} size='small' shape='rounded' floated='left' />
         <p style={{textAlign:"left"}}>
-          The joy that comes from producing art and connecting with an audience drives my work. I have undergraduate and graduate degrees in Art History and spent years studing and working with artists who inspire my creative process. I am always open to creating custom performance experiences and collaborating on new projects.
+          Sarah is an award-winning aerial artist available for performance and artistic collaboration. With half a decade of professional training and performing in the circus arts, she can deliver polished and unique spotlight or ambient spectacles. Please inquire below for more details.
+        </p>
+        <p style={{textAlign:"left"}}>
+          She completed the Paper Doll Militia Level 1 Trapeze teacher training as part of the Born to Fly certificate program and loves to share her passion for trapeze with curious beginners. You no longer have to run away to join the circus!
         </p>
         </Segment>
       </Grid.Column>
     </Grid.Row>
     <Grid.Row centered columns={1}>
       <Grid.Column width={6} textAlign='center'>
-        <h2> gallery </h2>
+        <h2 id="gallery"> gallery </h2>
         <AerialGallery />
       </Grid.Column>
     </Grid.Row>
     <Grid.Row columns={1}>
       <Grid.Column>
-        <Header as='h2'>
+        <Header as='h2' id="connect">
           connect with me
         </Header>
         <Segment clearing padded='very'>
