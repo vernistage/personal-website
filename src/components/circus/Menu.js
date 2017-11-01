@@ -14,6 +14,7 @@ class MainMenu extends Component {
           name='about'
           className = 'about'
           active={activeItem === 'about'}
+          href="#about"
           onClick={this.handleItemClick}
         >
           about
@@ -21,6 +22,7 @@ class MainMenu extends Component {
 
         <Menu.Item
           name='gallery'
+          href="#gallery"
           active={activeItem === 'gallery'}
           onClick={this.handleItemClick}
         >
@@ -29,6 +31,7 @@ class MainMenu extends Component {
 
         <Menu.Item
           name='connect'
+          href="#connect"
           active={activeItem === 'connect'}
           onClick={this.handleItemClick}
         >

@@ -24,13 +24,26 @@ class ContactForm extends Component {
   handleSubmit = (e) => {
    e.preventDefault();
   //  console.log(JSON.stringify(this.state))
-   let formData = {
-      formSender: this.state.firstName,
-      formSender: this.state.lastName,
-      formEmail: this.state.email,
-      formNum: this.state.phoneNum,
-      formMessage: this.state.message
-    }
+  //  let formData = {
+  //     firstName: this.state.firstName,
+  //     lastName: this.state.lastName,
+  //     email: this.state.email,
+  //     phoneNum: this.state.phoneNum,
+  //     formMessage: this.state.message
+  //   }
+
+    axios.post(process.env.MAILGUN_API_URL, {
+      from: this.state.email,
+      to: "sarahcreating@gmail.com",
+      subject: "from sarahacolby.com",
+      text: this.state.firstName + this.state.lastName + " sent the following message: " + this.state.message + " with number " + this.state.phoneNum
+    })
+      .then(function (response) {
+       console.log(response);
+      })
+      .catch(function (error) {
+       console.log(error);
+      });
 
     this.setState({
       firstName: '',
@@ -39,14 +52,6 @@ class ContactForm extends Component {
       phoneNum: '',
       message: ''
     });
-
-    axios.post('http://www.sarahacolby.com/contact-me', { form: formData })
-      .then(function (response) {
-       console.log(response);
-      })
-      .catch(function (error) {
-       console.log(error);
-      });
   };
 
   render() {
