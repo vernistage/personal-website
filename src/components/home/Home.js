@@ -40,12 +40,12 @@ class Home extends Component {
     return (
       <div className='main-buttons' style={{backgroundImage: 'url(' + imgChoice + ')'}}>
         <div className='buttons' style={{opacity: 1}}>
-          <a href='/code' target="_blank">
+          <a href='/code' >
             <Button className='menu-button' size='huge' inverted color='red' onMouseEnter={this.codeBackground.bind(this)} onMouseLeave={this.removeBackground.bind(this)}>
               Code
             </Button>
           </a>
-          <a href='/circus' target="_blank">
+          <a href='/circus' >
             <Button className='menu-button' size='huge' inverted color='red' onMouseEnter={this.circusBackground.bind(this)} onMouseLeave={this.removeBackground.bind(this)}>
               Circus
             </Button>
