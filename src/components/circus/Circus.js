@@ -77,7 +77,7 @@ const GridExampleVerticallyDivided = () => (
     <Grid.Row columns={1}>
       <Grid.Column>
         <div>
-          <i> © 2017 Sarah Colby. All rights reserved. </i>
+          <i> © 2017 Sarah Colby, Caroline Poe Photography. All rights reserved. </i>
         </div>
       </Grid.Column>
     </Grid.Row>
