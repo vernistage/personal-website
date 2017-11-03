@@ -20,7 +20,7 @@ class Index extends Component {
           <Route exact path="/" component={Home}/>
           <Route path="/circus" component={Circus}/>
           <Route path="/code" component={Code}/>
-          <Route path="/code/resume" component={Resume}/>
+          <Route path="/resume" component={Resume}/>
         </div>
       </Router>
     );
