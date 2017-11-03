@@ -11,7 +11,7 @@ class Portfolio extends Component {
     return (
       <Container>
         <Segment compact>
-          <Header as='h2' dividing>
+          <Header id="portfolio" as='h2' dividing>
             Portfolio
           </Header>
           <Card.Group>

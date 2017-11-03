@@ -36,7 +36,7 @@ class ContactForm extends Component {
       from: this.state.email,
       to: "sarahcreating@gmail.com",
       subject: "from sarahacolby.com",
-      text: this.state.firstName + this.state.lastName + " sent the following message: " + this.state.message + " with number " + this.state.phoneNum
+      text: this.state.firstName + " " + this.state.lastName + " sent the following message: " + this.state.message + " with number " + this.state.phoneNum
     })
       .then(function (response) {
        console.log(response);
