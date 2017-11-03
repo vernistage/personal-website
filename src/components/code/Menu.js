@@ -12,7 +12,7 @@ class CodeMenu extends Component {
     return (
       <div>
         <Menu pointing secondary>
-          <Menu.Item header name='About Sarah' active={activeItem === 'About Sarah'} onClick={this.handleItemClick}  href="#bio"/>
+          <Menu.Item header name='About' active={activeItem === 'About Sarah'} onClick={this.handleItemClick}  href="#bio"/>
           <Menu.Item name='Portfolio' active={activeItem === 'Portfolio'} onClick={this.handleItemClick} href="#portfolio"/>
           <Menu.Item name='Resume' active={activeItem === 'Resume'} onClick={this.handleItemClick} />
           <Menu.Menu position='right'>
