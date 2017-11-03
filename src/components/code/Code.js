@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import { Image, Card, Icon, Container, Header } from 'semantic-ui-react'
 import CodeMenu from './Menu.js'
+import Bio from './Bio.js'
 import localHost from './../../images/home.png';
 import friendConnector from './../../images/friend.png';
 import linker from './../../images/linker.png';
@@ -11,7 +12,8 @@ class Code extends Component {
   render() {
     return (
       <div>
-        <CodeMenu  />
+        <CodeMenu />
+        <Bio />
         <Container>
         <Header as='h2' dividing>
           Portfolio
