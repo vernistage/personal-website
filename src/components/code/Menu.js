@@ -14,7 +14,7 @@ class CodeMenu extends Component {
       <div>
         <Menu pointing secondary>
           <Menu.Item header name='About' active={activeItem === 'About Sarah'} onClick={this.handleItemClick}  href="#bio"/>
-          <Menu.Item name='Portfolio' active={activeItem === 'Portfolio'} onClick={this.handleItemClick} href="#portfolio"/>
+          <Menu.Item name='Portfolio' active={activeItem === 'Portfolio'}  href="#portfolio" onClick={this.handleItemClick} href="#portfolio"/>
           <Menu.Item name='Résumé' active={activeItem === 'Résumé'} onClick={this.handleItemClick} href='/resume'/>
           <Menu.Menu position='right'>
             <Menu.Item href='http://www.linkedin.com/in/sarahacolby' target='_blank'>
