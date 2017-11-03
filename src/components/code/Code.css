@@ -16,3 +16,7 @@
 .bio {
   margin-bottom: 25px;
 }
+
+.ui.menu.item>.button{
+  font-size: .85em important!;
+}

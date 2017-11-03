@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Menu, Icon, Button } from 'semantic-ui-react'
+import './Code.css'
 
 class CodeMenu extends Component {
   state = { activeItem: 'About Sarah' }
