@@ -10,9 +10,9 @@ class Portfolio extends Component {
   render() {
     return (
       <Container>
-      <Header as='h2' dividing>
-        Portfolio
-      </Header>
+        <Header as='h2' dividing>
+          Portfolio
+        </Header>
         <Card.Group>
           <Card>
             <Image src={localHost} />
