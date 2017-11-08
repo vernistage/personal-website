@@ -11,7 +11,8 @@ class ContactForm extends Component {
       lastName: '',
       email: '',
       phoneNum: '',
-      message: ''
+      message: '',
+      submitted: false
     }
   }
 
@@ -23,7 +24,7 @@ class ContactForm extends Component {
 
   handleSubmit = (e) => {
    e.preventDefault();
-   console.log(JSON.stringify(this.state))
+
    let formData = {
       firstName: this.state.firstName,
       lastName: this.state.lastName,
@@ -31,16 +32,22 @@ class ContactForm extends Component {
       phoneNum: this.state.phoneNum,
       formMessage: this.state.message
     }
-    axios.post(process.env.REACT_APP_MAILGUN_API_URL, {
-      from: this.state.email,
-      to: "sarahcreating@gmail.com",
-      subject: "from sarahacolby.com",
-      text: formData["firstName"] + " " + formData["lastName"] + " sent the following message: " + formData["formMessage"] + " with number " + formData["phoneNum"]
+
+    axios({
+      method: "post",
+      url: process.env.REACT_APP_MAILGUN_API_URL,
+      data: {
+        from: formData["email"],
+        to: "sarahcreating@gmail.com",
+        subject: "from sarahacolby.com",
+        text: formData["firstName"] + " " + formData["lastName"] + " sent the following message: " + formData["formMessage"] + " with number " + formData["phoneNum"]
+      }
     })
-      .then(function (response) {
+      .then(response => {
+        this.setState({submitted: true})
        console.log(response);
       })
-      .catch(function (error) {
+      .catch(error => {
        console.log(error);
       });
 
@@ -98,6 +105,7 @@ class ContactForm extends Component {
         <Form.Field
           id='form-button-control-public'
           control={Button}
+          disabled={this.state.submitted}
           content='Connect' />
        </Form>
      )
