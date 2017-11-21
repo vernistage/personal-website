@@ -18,7 +18,7 @@ class Bio extends Component {
             My mind is always working to create the most efficient solution to a problem, whether it be mapping in my brain and reevaluating the quickest route to work or the least-expensive way to make dream trips a reality. My mind is constantly working. I gravitate towards web development because when I code, it is one of the only times my problem-solving brain is satiated; I lose track of time and am fully immersed in the task-at-hand.
           </p>
           <p>
-            In my free time, I am an aerial artist and performer. It takes a lot of focus, problem-solving, and self-trust to be twenty feet in the air wrapping nylon fabric around myself in a way that supports me when I execute a drop that will take me all the way back down in under a second. Aerials have taught me a lot about the creative process, my ability to grow stronger, and pushing myself out of my comfort zone to achieve my goals. When I am on the ground, I like to bake and play with my rescue kittens, Chili and Peppercorn.
+            In my free time, I am an aerial artist and performer. It takes a lot of focus, problem-solving, and self-trust to be twenty feet in the air wrapping nylon fabric around myself in a way that supports me when I execute a drop that will take me all the way back down in under a second. Aerials have taught me a lot about the creative process, my ability to grow stronger, and pushing myself out of my comfort zone to achieve my goals. When I am on the ground, I like to play with my rescue kittens, Chili and Peppercorn, and bake.
           </p>
           <p>
             <Button basic content='Contact' icon='mail' labelPosition='left' floated='right' href="mailto:sdickers10@gmail.com?Subject=Website%20inquiry" />
