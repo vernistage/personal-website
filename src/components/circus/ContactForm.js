@@ -45,10 +45,8 @@ class ContactForm extends Component {
     })
       .then(response => {
         this.setState({submitted: true})
-       console.log(response);
       })
       .catch(error => {
-       console.log(error);
       });
 
     this.setState({
