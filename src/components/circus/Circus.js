@@ -62,7 +62,6 @@ const GridExampleVerticallyDivided = () => (
           connect with me
         </Header>
         <Segment clearing padded='very'>
-          // <ContactForm />
           <div className="social-buttons">
             <Button color='instagram' href="http://instagram.com/sarahintheair" target="_blank">
               <Icon name='instagram' /> Instagram
