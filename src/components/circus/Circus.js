@@ -62,7 +62,7 @@ const GridExampleVerticallyDivided = () => (
           connect with me
         </Header>
         <Segment clearing padded='very'>
-          <ContactForm />
+          // <ContactForm />
           <div className="social-buttons">
             <Button color='instagram' href="http://instagram.com/sarahintheair" target="_blank">
               <Icon name='instagram' /> Instagram
@@ -77,7 +77,7 @@ const GridExampleVerticallyDivided = () => (
     <Grid.Row columns={1}>
       <Grid.Column>
         <div>
-          <i> © 2017 Sarah Colby, Caroline Poe Photography. All rights reserved. </i>
+          <i> © 2017 Sarah Colby, all rights reserved. </i>
         </div>
       </Grid.Column>
     </Grid.Row>
