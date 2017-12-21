@@ -45,11 +45,6 @@ class Home extends Component {
               Code
             </Button>
           </a>
-          <a href='/circus' >
-            <Button className='menu-button' size='huge' inverted color='red' onMouseEnter={this.circusBackground.bind(this)} onMouseLeave={this.removeBackground.bind(this)}>
-              Circus
-            </Button>
-          </a>
         </div>
       </div>
     );
