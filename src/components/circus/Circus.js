@@ -17,7 +17,7 @@ class Circus extends Component {
       <div className="App">
         <Container className="intro">
           <Image src={rope} size='medium' centered className="sarah-rope" alt="Sarah on corde lisse" />
-          <Header as='h1'>
+          <Header as='h1' id="circus-title">
             Sarah Colby
             <Header.Subheader>
               aerialist
@@ -38,8 +38,8 @@ const GridExampleVerticallyDivided = () => (
   <Grid divided='vertically'>
     <Grid.Row columns={1}>
       <Grid.Column>
-        <Header as='h2' id="about"> about </Header>
         <Segment clearing padded='very'>
+        <Header as='h2' id="about"> about </Header>
           <Image src={headshot} size='medium' shape='rounded' floated='left' />
           <p style={{textAlign:"left"}}>
             A longtime lover of movement, Sarah grew up as a competitive gymnast before transitioning to classical ballet and musical theater. By the age of 18, she already choreographed a full production for her local theater. In college, she danced with the Harvard Ballet Company, the Harvard-Radcliffe Dramatic Club, and the Wellesley College Dancers. Now based in Austin, Texas, Sarah studies contortion and lives her passion for movement in the air as an award-winning aerial performance artist.
@@ -67,8 +67,8 @@ const GridExampleVerticallyDivided = () => (
       </p>
     </Grid.Row>
     <Grid.Row centered columns={1}>
-      <Header as='h2' id="video"> demo </Header>
       <Segment clearing padded='very'>
+      <Header as='h2' id="video"> demo </Header>
         Video coming soon. Stay tuned!
       </Segment>
     </Grid.Row>
