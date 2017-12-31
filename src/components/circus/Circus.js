@@ -40,13 +40,18 @@ const GridExampleVerticallyDivided = () => (
       <Grid.Column>
         <Header as='h2' id="about"> about </Header>
         <Segment clearing padded='very'>
-        <Image src={headshot} size='medium' shape='rounded' floated='left' />
-        <p style={{textAlign:"left"}}>
-          A longtime lover of movement, Sarah grew up as a competitive gymnast before transitioning to classical ballet and musical theater. By the age of 18, she already choreographed a full production for her local theater. In college, she danced with the Harvard Ballet Company, the Harvard-Radcliffe Dramatic Club, and the Wellesley College Dancers. Now based in Austin, Texas, Sarah studies contortion and lives her passion for movement in the air as an award-winning aerial performance artist.
-        </p>
-        <p style={{textAlign:"left"}}>
-          In addition to performances, Sarah is available for aerial and creative movement coaching and choreography. She completed the Level 1 Trapeze Teacher Training with the highly acclaimed Paper Doll Militia company as part of the Born to Fly cerfication program.
-        </p>
+          <Image src={headshot} size='medium' shape='rounded' floated='left' />
+          <p style={{textAlign:"left"}}>
+            A longtime lover of movement, Sarah grew up as a competitive gymnast before transitioning to classical ballet and musical theater. By the age of 18, she already choreographed a full production for her local theater. In college, she danced with the Harvard Ballet Company, the Harvard-Radcliffe Dramatic Club, and the Wellesley College Dancers. Now based in Austin, Texas, Sarah studies contortion and lives her passion for movement in the air as an award-winning aerial performance artist.
+          </p>
+          <p style={{textAlign:"left"}}>
+            In addition to performances, Sarah is available for aerial and creative movement coaching and choreography. She completed the Level 1 Trapeze Teacher Training with the highly acclaimed Paper Doll Militia company as part of the Born to Fly cerfication program.
+          </p>
+          <div className="social-buttons">
+            <Button color='google plus' href="mailto:sarahcreating@gmail.com">
+              <Icon name='mail outline' /> Email Sarah
+            </Button>
+          </div>
         </Segment>
       </Grid.Column>
     </Grid.Row>
@@ -55,23 +60,17 @@ const GridExampleVerticallyDivided = () => (
         <h2 id="gallery"> gallery </h2>
         <AerialGallery />
       </Grid.Column>
+      <p>
+        <Button color='instagram' href="http://instagram.com/sarahintheair" target="_blank">
+        <Icon name='instagram' /> Instagram
+        </Button>
+      </p>
     </Grid.Row>
-    <Grid.Row columns={1}>
-      <Grid.Column>
-        <Header as='h2' id="connect">
-          connect
-        </Header>
-        <Segment clearing padded='very'>
-          <div className="social-buttons">
-            <Button color='instagram' href="http://instagram.com/sarahintheair" target="_blank">
-              <Icon name='instagram' /> Instagram
-            </Button>
-            <Button color='google plus' href="mailto:sarahcreating@gmail.com">
-              <Icon name='mail outline' /> Email
-            </Button>
-          </div>
-        </Segment>
-      </Grid.Column>
+    <Grid.Row centered columns={1}>
+      <Header as='h2' id="video"> demo </Header>
+      <Segment clearing padded='very'>
+        Video coming soon. Stay tuned!
+      </Segment>
     </Grid.Row>
     <Grid.Row columns={1}>
       <Grid.Column>

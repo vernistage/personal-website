@@ -30,12 +30,12 @@ class MainMenu extends Component {
         </Menu.Item>
 
         <Menu.Item
-          name='connect'
-          href="#connect"
-          active={activeItem === 'connect'}
+          name='video'
+          href="#video"
+          active={activeItem === 'video'}
           onClick={this.handleItemClick}
         >
-          connect
+          video
         </Menu.Item>
       </Menu>
     )
