@@ -8,7 +8,7 @@ import AerialGallery from './AerialGallery.js';
 import MainMenu from './Menu.js'
 import ContactForm from './ContactForm.js'
 // Images
-import headshot from './../../images/face.jpg'
+import headshot from './../../images/back-balance-XL.jpg'
 import rope from './../../images/rope.jpg';
 
 class Circus extends Component {
@@ -40,12 +40,12 @@ const GridExampleVerticallyDivided = () => (
       <Grid.Column>
         <Header as='h2' id="about"> about </Header>
         <Segment clearing padded='very'>
-        <Image src={headshot} size='small' shape='rounded' floated='left' />
+        <Image src={headshot} size='medium' shape='rounded' floated='left' />
         <p style={{textAlign:"left"}}>
-          Sarah is an award-winning aerial artist available for performance and artistic collaboration. With half a decade of professional training and performing in the circus arts, she can deliver polished and unique spotlight or ambient spectacles. Please inquire below for more details.
+          A longtime lover of movement, Sarah grew up as a competitive gymnast before transitioning to classical ballet and musical theater. By the age of 18, she already choreographed a full production for her local theater. In college, she danced with the Harvard Ballet Company, the Harvard-Radcliffe Dramatic Club, and the Wellesley College Dancers. Now based in Austin, Texas, Sarah studies contortion and lives her passion for movement in the air as an award-winning aerial performance artist.
         </p>
         <p style={{textAlign:"left"}}>
-          She completed the Paper Doll Militia Level 1 Trapeze teacher training as part of the Born to Fly certificate program and loves to share her passion for trapeze with curious beginners. You no longer have to run away to join the circus!
+          In addition to performances, Sarah is available for aerial and creative movement coaching and choreography. She completed the Level 1 Trapeze Teacher Training with the highly acclaimed Paper Doll Militia company as part of the Born to Fly cerfication program.
         </p>
         </Segment>
       </Grid.Column>
@@ -59,7 +59,7 @@ const GridExampleVerticallyDivided = () => (
     <Grid.Row columns={1}>
       <Grid.Column>
         <Header as='h2' id="connect">
-          connect with me
+          connect
         </Header>
         <Segment clearing padded='very'>
           <div className="social-buttons">
