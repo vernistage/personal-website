@@ -42,10 +42,10 @@ const GridExampleVerticallyDivided = () => (
         <Segment clearing padded='very'>
         <Image src={headshot} size='small' shape='rounded' floated='left' />
         <p style={{textAlign:"left"}}>
-          Sarah is an award-winning aerial artist available for performance and artistic collaboration. With half a decade of professional training and performing in the circus arts, she can deliver polished and unique spotlight or ambient spectacles. Please inquire below for more details.
+          A longtime lover of movement, Sarah grew up as a competitive gymnast before transitioning to performing classical ballet and jazz dance. By the age of 17, she already choreographed an entire musical for her community theater. In college, Sarah studied art and performed with the Harvard Ballet Company, the Harvard-Radcliffe Dramatic Company, and the Wellesley College Dancers. She is now studying contortion and living her passion for movement in the air as an aerial performance artist.
         </p>
         <p style={{textAlign:"left"}}>
-          She completed the Paper Doll Militia Level 1 Trapeze teacher training as part of the Born to Fly certificate program and loves to share her passion for trapeze with curious beginners. You no longer have to run away to join the circus!
+          In addition to performances, Sarah is available for trapeze and creative movement coaching and choreography. She completed the Level 1 Trapeze Teacher Training with the highly acclaimed Paper Doll Militia company as part of the Born to Fly cerfication program.
         </p>
         </Segment>
       </Grid.Column>
