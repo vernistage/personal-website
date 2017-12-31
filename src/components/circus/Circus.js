@@ -8,7 +8,7 @@ import AerialGallery from './AerialGallery.js';
 import MainMenu from './Menu.js'
 import ContactForm from './ContactForm.js'
 // Images
-import headshot from './../../images/face.jpg'
+import headshot from './../../images/back-balance-XL.jpg'
 import rope from './../../images/rope.jpg';
 
 class Circus extends Component {
@@ -40,12 +40,12 @@ const GridExampleVerticallyDivided = () => (
       <Grid.Column>
         <Header as='h2' id="about"> about </Header>
         <Segment clearing padded='very'>
-        <Image src={headshot} size='small' shape='rounded' floated='left' />
+        <Image src={headshot} size='medium' shape='rounded' floated='left' />
         <p style={{textAlign:"left"}}>
-          A longtime lover of movement, Sarah grew up as a competitive gymnast before transitioning to performing classical ballet and jazz dance. By the age of 17, she already choreographed an entire musical for her community theater. In college, Sarah studied art and performed with the Harvard Ballet Company, the Harvard-Radcliffe Dramatic Company, and the Wellesley College Dancers. She is now studying contortion and living her passion for movement in the air as an aerial performance artist.
+          A longtime lover of movement, Sarah grew up as a competitive gymnast before transitioning to classical ballet and musical theater. By the age of 17, she already choreographed an entire musical for her local theater. In college, Sarah danced with the Harvard Ballet Company, the Harvard-Radcliffe Dramatic Club, and the Wellesley College Dancers. She studies contortion and lives her passion for movement in the air as an award-winning aerial performance artist.
         </p>
         <p style={{textAlign:"left"}}>
-          In addition to performances, Sarah is available for trapeze and creative movement coaching and choreography. She completed the Level 1 Trapeze Teacher Training with the highly acclaimed Paper Doll Militia company as part of the Born to Fly cerfication program.
+          In addition to performances, Sarah is available for aerial and creative movement coaching and choreography. She completed the Level 1 Trapeze Teacher Training with the highly acclaimed Paper Doll Militia company as part of the Born to Fly cerfication program.
         </p>
         </Segment>
       </Grid.Column>
@@ -59,7 +59,7 @@ const GridExampleVerticallyDivided = () => (
     <Grid.Row columns={1}>
       <Grid.Column>
         <Header as='h2' id="connect">
-          connect with me
+          connect
         </Header>
         <Segment clearing padded='very'>
           <div className="social-buttons">
