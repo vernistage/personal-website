@@ -42,7 +42,7 @@ const GridExampleVerticallyDivided = () => (
         <Segment clearing padded='very'>
         <Image src={headshot} size='medium' shape='rounded' floated='left' />
         <p style={{textAlign:"left"}}>
-          A longtime lover of movement, Sarah grew up as a competitive gymnast before transitioning to classical ballet and musical theater. By the age of 17, she already choreographed an entire musical for her local theater. In college, Sarah danced with the Harvard Ballet Company, the Harvard-Radcliffe Dramatic Club, and the Wellesley College Dancers. She studies contortion and lives her passion for movement in the air as an award-winning aerial performance artist.
+          A longtime lover of movement, Sarah grew up as a competitive gymnast before transitioning to classical ballet and musical theater. By the age of 18, she already choreographed a full production for her local theater. In college, she danced with the Harvard Ballet Company, the Harvard-Radcliffe Dramatic Club, and the Wellesley College Dancers. Now based in Austin, Texas, Sarah studies contortion and lives her passion for movement in the air as an award-winning aerial performance artist.
         </p>
         <p style={{textAlign:"left"}}>
           In addition to performances, Sarah is available for aerial and creative movement coaching and choreography. She completed the Level 1 Trapeze Teacher Training with the highly acclaimed Paper Doll Militia company as part of the Born to Fly cerfication program.
