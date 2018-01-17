@@ -96,6 +96,7 @@ const GridExampleVerticallyDivided = () => (
       <Segment clearing padded='very'>
       <Header as='h2' id="video"> demo </Header>
         <Video />
+        <p> (Press Play) </p>
       </Segment>
     </Grid.Row>
     <Grid.Row columns={1}>
