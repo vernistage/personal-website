@@ -10,6 +10,7 @@ import ContactForm from './ContactForm.js'
 // Images
 import headshot from './../../images/back-balance-XL.jpg'
 import rope from './../../images/rope.jpg';
+import YouTube from 'react-youtube';
 
 class Circus extends Component {
   render() {
@@ -31,6 +32,31 @@ class Circus extends Component {
         <GridExampleVerticallyDivided  />
       </div>
     );
+  }
+}
+
+class Video extends React.Component {
+  render() {
+    const opts = {
+      height: '390',
+      width: '640',
+      playerVars: { // https://developers.google.com/youtube/player_parameters
+        autoplay: 1
+      }
+    };
+
+    return (
+      <YouTube
+        videoId="bXbPk-kK0Lw"
+        opts={opts}
+        onReady={this._onReady}
+      />
+    );
+  }
+
+  _onReady(event) {
+    // access to player in all event handlers via event.target
+    event.target.pauseVideo();
   }
 }
 
@@ -69,7 +95,7 @@ const GridExampleVerticallyDivided = () => (
     <Grid.Row centered columns={1}>
       <Segment clearing padded='very'>
       <Header as='h2' id="video"> demo </Header>
-        Video coming soon. Stay tuned!
+        <Video />
       </Segment>
     </Grid.Row>
     <Grid.Row columns={1}>
