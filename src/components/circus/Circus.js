@@ -17,7 +17,7 @@ class Circus extends Component {
     return (
       <div className="App">
         <Container className="intro">
-          <Image src={rope} size='medium' centered className="sarah-rope" alt="Sarah on corde lisse" />
+          <Image src={rope} size='medium' centered className="sarah-rope" alt="Austin aerialist Sarah on corde lisse aerial rope" />
           <Header as='h1' id="circus-title">
             Sarah Colby
             <Header.Subheader>
@@ -66,7 +66,7 @@ const GridExampleVerticallyDivided = () => (
       <Grid.Column>
         <Segment clearing padded='very'>
         <Header as='h2' id="about"> about </Header>
-          <Image src={headshot} size='medium' shape='rounded' floated='left' />
+          <Image src={headshot} size='medium' shape='rounded' floated='left' alt='austin aerialist sarah colby on trapeze'/>
           <p style={{textAlign:"left"}}>
             A longtime lover of movement, Sarah grew up as a competitive gymnast before transitioning to classical ballet and musical theater. By the age of 18, she already choreographed a full production for her local theater. In college, she danced with the Harvard Ballet Company, the Harvard-Radcliffe Dramatic Club, and the Wellesley College Dancers. Now based in Austin, Texas, Sarah studies contortion and lives her passion for movement in the air as an award-winning aerial performance artist.
           </p>
@@ -94,7 +94,7 @@ const GridExampleVerticallyDivided = () => (
     </Grid.Row>
     <Grid.Row centered columns={1}>
       <Segment clearing padded='very'>
-      <Header as='h2' id="video"> demo </Header>
+      <Header as='h2' id="video" alt="demo video of Austin aerialist Sarah Colby performing on trapeze and other circus apparatus"> demo </Header>
         <Video />
         <p> (Press Play) </p>
       </Segment>
