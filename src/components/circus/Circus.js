@@ -68,10 +68,10 @@ const GridExampleVerticallyDivided = () => (
         <Header as='h2' id="about"> about </Header>
           <Image src={headshot} size='medium' shape='rounded' floated='left' alt='austin aerialist sarah colby on trapeze'/>
           <p style={{textAlign:"left"}}>
-            A longtime lover of movement and art, Sarah grew up as a competitive gymnast before transitioning to classical ballet and musical theater. By the age of 18, she already choreographed a full production for her local theater in northern Idaho. While earning her degree in Art History at Wellesley College, Sarah danced with the Harvard Ballet Company, the Harvard-Radcliffe Dramatic Club, and the Wellesley College Dancers. Her passion for studying other contemporary artists led her to positions at some of the world's most prominent museums, including the Museum of Fine Arts, Boston, and the Centre Pompidou (MNAM) in Paris, France. Now based in Austin, Texas, Sarah studies contortion and lives her passion for movement in the air as an award-winning aerial performance artist.
+            A longtime lover of movement and art, Sarah grew up as a competitive gymnast before transitioning to classical ballet and musical theater. By the age of 18, she already choreographed a full production for her local theater in northern Idaho. While earning her degree in Art History at Wellesley College, Sarah danced with the Harvard Ballet Company, the Harvard-Radcliffe Dramatic Club, and the Wellesley College Dancers. Her passion for studying other contemporary artists led her to positions at some of the world's most prominent museums, including the Museum of Fine Arts, Boston, and the Centre Pompidou (MNAM) in Paris, France. Now based in Austin, Texas, Sarah studies contortion and lives her passion for movement in the air as an award-winning aerial performance artist. She carries her own performer's insurance through Specialty Insurance Agency.
           </p>
           <p style={{textAlign:"left"}}>
-            In addition to performances, Sarah is available for aerial and creative movement coaching and choreography. She completed Level 1 Trapeze Teacher Training with Paper Doll Militia.
+            In addition to performances, Sarah is available for aerial and creative movement coaching and choreography. She completed Level 1 Trapeze Teacher Training through Born to Fly™ and is CPR/First Aid certified.
           </p>
           <div className="social-buttons">
             <Button color='google plus' href="mailto:sarahcreating@gmail.com">
